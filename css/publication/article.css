@@ -1,0 +1,12 @@
+.card {
+  padding-top: 10px;
+  border-radius: 10px;
+  transition: all 0.2s ease-in;
+}
+.card img {
+  border-radius: 15px;
+}
+
+.card:hover {
+  transform: scale(1.15);
+}

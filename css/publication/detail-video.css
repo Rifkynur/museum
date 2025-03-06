@@ -1,0 +1,19 @@
+.detail-video video {
+  border-radius: 20px;
+}
+.detail-video h3 {
+  font-size: 16px;
+  font-weight: 700;
+}
+@media (max-width: 768px) {
+  .detail-video video {
+    width: 100%;
+    border-radius: 15px;
+  }
+  .detail-video h3 {
+    font-size: 12px;
+  }
+  .detail-video .row p {
+    font-size: 12px;
+  }
+}

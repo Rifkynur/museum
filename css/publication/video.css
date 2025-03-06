@@ -1,0 +1,26 @@
+.card {
+  border-radius: 20px;
+  background-image: url("../../asset/img/4ea70280-31e9-44dc-9df6-c1055aa6aa40.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 200px;
+  transition: all 0.2s ease;
+  width: 18rem;
+}
+.card-body {
+  opacity: 0;
+  transition: all 0.2s ease;
+}
+
+.card:hover .card-body {
+  opacity: 1;
+}
+.card:hover {
+  scale: 1.05;
+}
+@media (max-width: 768px) {
+  .card {
+    width: 100%;
+  }
+}

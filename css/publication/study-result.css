@@ -1,0 +1,29 @@
+.study-result-container {
+  grid-template-columns: repeat(4, 1fr);
+  display: grid;
+  gap: 20px;
+}
+.study-result-container a {
+  width: 100%;
+  transition: all 0.3s ease-in;
+  cursor: pointer;
+}
+.study-result-container a img {
+  border-radius: 10px;
+  width: 100%;
+}
+.study-result-container a:hover {
+  scale: 1.15;
+}
+.card {
+  border-radius: 10px;
+  border: none;
+}
+@media (max-width: 768px) {
+  .study-result-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  h1 {
+    font-size: 18px;
+  }
+}

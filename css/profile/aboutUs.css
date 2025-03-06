@@ -1,0 +1,17 @@
+.main-section h1 {
+  text-align: center;
+  font-weight: 700;
+}
+.aboutUs-img {
+  width: 500px;
+  border-radius: 40px;
+}
+@media (max-width: 768px) {
+  .aboutUs-img {
+    width: 400px;
+    margin-bottom: 10px;
+    text-align: center;
+    margin-inline: auto;
+    object-fit: contain;
+  }
+}
