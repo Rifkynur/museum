@@ -7,6 +7,7 @@ body {
   background-color: black;
   background-attachment: fixed;
 }
+
 .navbar-container {
   display: flex;
   justify-content: space-between;
@@ -68,6 +69,52 @@ body {
   margin-top: 100px;
   padding-block: 20px;
 }
+.dropdown-menu.show {
+  display: flex;
+}
+.home-section {
+  width: 100%;
+  margin-inline: auto;
+  min-height: 100vh;
+  margin-top: 100px;
+}
+.slider-card-container {
+  gap: 50px;
+  height: fit-content;
+  width: fit-content;
+}
+.card-slider h2 {
+  font-size: 16px;
+  font-weight: bold;
+  position: absolute;
+  top: -30px;
+}
+.card-slider {
+  width: 300px;
+  height: 400px;
+  box-shadow: 7px 7px 7px rgb(0, 0, 0);
+  cursor: pointer;
+  background-image: url("../asset/img/f0mp_nyei_230213.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: transform 0.5s ease-in-out;
+  position: relative;
+}
+.card-slider img {
+  width: 100%;
+  object-fit: cover;
+}
+.card1 {
+  height: 450px;
+}
+
+.slider-button {
+  border-radius: 50%;
+  background-color: gray;
+  color: white;
+  font-size: 20px;
+}
 
 footer {
   background-color: #545454;
@@ -80,9 +127,7 @@ footer h2 {
 .logo-footer {
   width: 70px;
 }
-.dropdown-menu.show {
-  display: flex;
-}
+
 @media (max-width: 768px) {
   .navbar-brand {
     display: none;
@@ -105,5 +150,12 @@ footer h2 {
   .main-section {
     margin-top: 50px;
     padding-block: 10px;
+  }
+  .card {
+    width: 220px;
+    height: 300px;
+  }
+  .card1 {
+    height: 300px;
   }
 }

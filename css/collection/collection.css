@@ -1,0 +1,108 @@
+.filter-container {
+  border: 1px solid gray;
+  margin: 5px 20px;
+  border-radius: 50px;
+  padding: 10px 20px;
+  box-shadow: 3px 3px 3px black;
+  font-weight: 700;
+  justify-content: space-between;
+  cursor: pointer;
+  margin-block: 30px;
+}
+
+.rows-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
+
+.carousel-container {
+  position: relative;
+  width: 100%;
+  padding: 20px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.carousel-track {
+  display: flex;
+  gap: 50px;
+  position: relative;
+}
+
+.carousel-track.row1 {
+  animation: scroll 20s linear infinite;
+}
+
+.carousel-track.row2 {
+  animation: scroll-reverse 20s linear infinite;
+}
+
+.carousel-track.row3 {
+  animation: scroll 20s linear infinite;
+}
+
+/* Pause animation on hover */
+.carousel-container:hover .carousel-track {
+  animation-play-state: paused;
+}
+
+.slide {
+  flex: 0 0 200px;
+  height: 200px;
+  border-radius: 10px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Scale effect when hovering on individual slides */
+.slide:hover {
+  transform: scale(1.05);
+  z-index: 10;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(calc(-220px * 6));
+  }
+}
+
+@keyframes scroll-reverse {
+  0% {
+    transform: translateX(calc(-220px * 6));
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .filter-container {
+    padding: 10px 0;
+    border-radius: 30px;
+    flex-wrap: wrap;
+    font-size: 10px;
+    gap: 20px;
+    justify-content: center;
+    margin: 5px 10px;
+  }
+  .carousel-track {
+    gap: 30px;
+  }
+}
