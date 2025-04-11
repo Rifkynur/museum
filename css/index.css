@@ -84,12 +84,13 @@ a {
   gap: 50px;
   height: fit-content;
   width: fit-content;
+  padding-top: 20px;
 }
 .card-slider h2 {
   font-size: 16px;
   font-weight: bold;
   position: absolute;
-  top: -30px;
+  top: -20px;
 }
 .card-slider {
   width: 300px;
