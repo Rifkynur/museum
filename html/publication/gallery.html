@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../bootstrap-5.0.2-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="../../css/index.css">
-    <link rel="stylesheet" href="../../css/publication/detail-video.css">
+    <link rel="stylesheet" href="../../css/publication/gallery.css">
+    <link rel="stylesheet" href="../../css/splide.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -39,7 +40,7 @@
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Koleksi</a>
+                        <a class="nav-link" href="../collection/collection.html">Koleksi</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link" href="#" id="navbarDropdown2" role="button" data-bs-toggle="dropdown"
@@ -48,11 +49,11 @@
                             <li><a class="dropdown-item" href="./article.html">Artikel</a></li>
                             <li><a class="dropdown-item" href="#">Galeri</a></li>
                             <li><a class="dropdown-item" href="./video.html">Video</a></li>
-                            <li><a class="dropdown-item" href="./studyResult.html">Hasil Kajian</a></li>
+                            <li><a class="dropdown-item" href="#">Hasil Kajian</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="../agenda/agenda.html">Acara</a>
+                        <a class="nav-link" href="#">Acara</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link" href="#" id="navbarDropdown3" role="button" data-bs-toggle="dropdown"
@@ -85,44 +86,67 @@
             </div>
         </div>
     </nav>
-    <section class="main-section detail-video">
-        <div class="container row mx-auto justify-content-between g-3">
-            <video src="../../asset/video/mov_bbb.mp4" controls></video>
-            <div class="d-flex justify-content-between align-items-center">
-                <h2 class="fs-5">Judul Video</h2>
-                <div class="d-flex align-items-center gap-2">
-                    <i class="fa-solid fa-paper-plane"></i>
-                    <i class="fa-solid fa-heart"></i>
-                    <i class="fa-solid fa-comment"></i>
-                </div>
-            </div>
-            <small>Tahun Video</small>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque voluptatum natus neque
-                explicabo non
-                laudantium adipisci. Tenetur dolorem consequatur adipisci. Dolor deleniti error porro ipsam eum ullam
-                iusto adipisci harum, officia ex eveniet doloribus consequuntur expedita. Sint quidem distinctio commodi
-                veniam, mollitia, facere necessitatibus earum adipisci, quos hic aperiam dignissimos laudantium
-                voluptatibus perferendis. Nesciunt dignissimos ipsum magni similique, quia atque dolor aperiam tempora
-            </p>
-            <div class="row">
-                <div class="col-6 col-md-3">
-                    <h3>Sutradara</h3>
-                    <p>Nama</p>
-                </div>
-                <div class="col-6 col-md-3">
-                    <h3>Sutradara</h3>
-                    <p>Nama</p>
-                </div>
-                <div class="col-6 col-md-3">
-                    <h3>Sutradara</h3>
-                    <p>Nama</p>
-                </div>
-                <div class="col-6 col-md-3">
-                    <h3>Sutradara</h3>
-                    <p>Nama</p>
-                </div>
+    <section class="main-section video">
+        <div class="container">
+            <h1 class="text-center">Galeri</h1>
+            <div class="search-container ms-auto">
+                <input type="text" placeholder="masukan data">
+                <i class="fa-solid fa-magnifying-glass"></i>
             </div>
         </div>
+        <div class="container mx-auto justify-content-between g-2 gallery-container py-3">
+            <div class="splide">
+                <div class="splide__track">
+                  <ul class="splide__list">
+                    <li class="splide__slide p-3">
+                        <div class="gallery-image-wrapper">
+                            <img src="../../asset/img/4ea70280-31e9-44dc-9df6-c1055aa6aa40.webp" alt="img" class="gallery-img" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            <div class="splide splide1">
+                <div class="splide__track">
+                  <ul class="splide__list">
+                    <li class="splide__slide p-3">
+                        <div class="gallery-image-wrapper">
+                            <img src="../../asset/img/4ea70280-31e9-44dc-9df6-c1055aa6aa40.webp" alt="img" class="gallery-img" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        </div>
+                    </li>
+
+                  </ul>
+                </div>
+              </div>
+            <div class="splide splide2">
+                <div class="splide__track">
+                  <ul class="splide__list">
+                    <li class="splide__slide p-3">
+                        <div class="gallery-image-wrapper">
+                            <img src="../../asset/img/4ea70280-31e9-44dc-9df6-c1055aa6aa40.webp" alt="img" class="gallery-img" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        </div>
+                    </li>
+                   
+                  </ul>
+                </div>
+              </div>
+        </div>
+        </div>
+
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <img src="../../asset/img/4ea70280-31e9-44dc-9df6-c1055aa6aa40.webp" alt="img">
+                </div>
+               
+              </div>
+            </div>
+          </div>
     </section>
     <footer class="bg-black p-4">
         <div class="container row align-items-start gap-3 gap-md-0">
@@ -160,6 +184,65 @@
         </div>
     </footer>
     <script src="../../bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../../js/splide.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+          new Splide('.splide', {
+            type    : 'loop',
+            pagination : false,
+            perPage : 6,
+            autoplay: false,
+            drag :'free',
+            arrows :false,
+            focus :'center',
+            breakpoints: {
+                    768: {
+                    perPage: 2,
+                    gap:'10px',
+
+                    },
+                    1024: {
+                    perPage: 4,
+                    }}
+          }).mount();
+
+          new Splide('.splide1', {
+            type    : 'loop',
+            pagination : false,
+            perPage : 6,
+            autoplay: true,
+            drag :'free',
+            arrows :false,
+            breakpoints: {
+                    768: {
+                    perPage: 2,
+                    gap:'10px'
+                    },
+                    1024: {
+                    perPage: 4,
+                    }}
+          }).mount();
+
+          new Splide('.splide2', {
+            type    : 'loop',
+            pagination : false,
+            perPage : 6,
+            autoplay: true,
+            drag :'free',
+            arrows :false,
+            focus :'center',
+            breakpoints: {
+                    768: {
+                    perPage: 2,
+                    gap:'10px'
+                    },
+                    1024: {
+                    perPage: 4,
+                    }}
+          }).mount();
+        });
+        
+      </script>
 </body>
 
 </html>

@@ -1,5 +1,5 @@
 body {
-  background-image: url("../asset/img/f0mp_nyei_230213.jpg");
+  background-image: url("../asset/img/f0mp_nyei_230213.webp");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -7,7 +7,9 @@ body {
   background-color: black;
   background-attachment: fixed;
 }
-
+a {
+  text-decoration: none;
+}
 .navbar-container {
   display: flex;
   justify-content: space-between;
@@ -151,11 +153,15 @@ footer h2 {
     margin-top: 50px;
     padding-block: 10px;
   }
-  .card {
-    width: 220px;
+  /* .card {
     height: 300px;
+  } */
+  .slider-card-container {
+    gap: 15px;
   }
-  .card1 {
+  .card1,
+  .card2 {
+    width: 220px;
     height: 300px;
   }
 }

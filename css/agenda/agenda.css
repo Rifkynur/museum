@@ -1,0 +1,94 @@
+.calendar-wrapper {
+  width: 100%;
+  padding: 20px;
+}
+.dycalendar-container {
+  width: 100% !important;
+  max-width: 100% !important;
+}
+.dycalendar-header {
+  background: black;
+  color: white;
+  padding: 10px !important;
+  border-radius: 10px 10px 0 0;
+  text-align: center;
+  font-weight: bold;
+}
+.dycalendar-table {
+  width: 100% !important;
+  table-layout: fixed;
+}
+
+.dycalendar-body {
+  border: 1px solid black;
+  border-top: none;
+  border-radius: 0 0 10px 10px;
+  overflow: hidden;
+  width: 100% !important;
+  font-weight: 700;
+}
+
+.dycalendar-body table {
+  width: 100% !important;
+  height: 450px;
+}
+.dycalendar-body table tr td {
+  border: 1px solid black;
+}
+.dycalendar-target-date {
+  background-color: #e9ecef;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.dycalendar-prev-next-btn {
+  color: white;
+  padding-inline: 12px;
+  font-size: 30px;
+}
+.dycalendar-today-date {
+  background-color: #0ddcf9 !important;
+  color: black !important;
+}
+.agenda-card-container {
+  grid-template-columns: repeat(4, 1fr);
+  display: grid;
+  gap: 20px;
+}
+.agenda-card-container a {
+  width: 100%;
+  transition: all 0.3s ease-in;
+  cursor: pointer;
+  background-color: transparent;
+}
+.agenda-card-container a img {
+  border-radius: 10px;
+  width: 100%;
+}
+.agenda-card {
+  padding-bottom: 50px;
+  padding: 5px;
+  background-color: gray;
+  border-radius: 10px;
+  border: none;
+  padding-bottom: 100px;
+}
+.agenda-card:hover {
+  scale: 1.15;
+  transition: all 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .agenda-card-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  h1 {
+    font-size: 18px;
+  }
+  .agenda-card:hover {
+    scale: 1.05;
+  }
+  .dycalendar-body table {
+    height: 300px;
+  }
+}

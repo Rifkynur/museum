@@ -1,0 +1,20 @@
+.visit-registration-section {
+  min-height: 100vh;
+}
+.visit-registration-section input {
+  background-color: transparent;
+  border: 2px solid black;
+  border-radius: 20px;
+}
+.visit-registration-section input:focus {
+  background-color: transparent;
+  border-color: black;
+  box-shadow: none;
+}
+
+button.btn {
+  border-radius: 10px;
+  color: black;
+  font-weight: 700;
+  background-color: #a6a6a6;
+}
