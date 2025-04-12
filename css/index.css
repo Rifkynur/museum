@@ -165,4 +165,31 @@ footer h2 {
     width: 220px;
     height: 300px;
   }
+  .button-wrapper {
+    width: 150px;
+    height: 100px;
+    position: relative;
+    margin-top: 10px;
+  }
+  .carousel-button {
+    height: 50px;
+    width: 50px;
+    border-radius: 30px;
+    background-color: black;
+    font-weight: 700;
+    color: white;
+    font-size: 20px;
+  }
+  .carousel-inner {
+    /* background-color: #545454; */
+    padding-block: 30px;
+    /* position: relative !important; */
+  }
+  .carousel-inner img {
+    width: 250px !important;
+    margin: auto;
+    border-radius: 20px;
+    height: 300px;
+    object-fit: cover;
+  }
 }
